@@ -11,8 +11,7 @@
 2.  Initialize the closed list
     put the starting node on the open 
     list (you can leave its f at zero)
-```
-```
+
 3.  while the open list is not empty
     a) find the node with the least f on 
        the open list, call it "q"
@@ -21,7 +20,8 @@
   
     c) generate q's 8 successors and set their 
        parents to q
-   
+   ```
+```
     d) for each successor
         i) if successor is the goal, stop search
         
