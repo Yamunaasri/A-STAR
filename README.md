@@ -5,13 +5,14 @@
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
 
-``````
+```
 // A* Search Algorithm
 1.  Initialize the open list
 2.  Initialize the closed list
     put the starting node on the open 
     list (you can leave its f at zero)
-
+```
+```
 3.  while the open list is not empty
     a) find the node with the least f on 
        the open list, call it "q"
@@ -48,7 +49,7 @@
     e) push q on the closed list
     end (while loop)
 
-``````
+```
 ## PROGRAM:
 ``` py
 from collections import defaultdict
@@ -60,7 +61,8 @@ def aStarAlgo(start_node, stop_node):
     parents = {}         # parents contains an adjacency map of all nodes
     #distance of starting node from itself is zero
     g[start_node] = 0
-
+```
+```
 #start_node is root node i.e it has no parent nodes
 #so start_node is set to its own parent node
 
@@ -96,7 +98,8 @@ while len(open_set) > 0:
     if n == None:
         print('Path does not exist!')
         return None
-        
+```
+```   
 # if the current node is the stop_node
 # then we begin reconstructin the path from it to the start_node
 
