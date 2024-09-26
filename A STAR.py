@@ -45,9 +45,8 @@ def aStarAlgo(start_node, stop_node):
                             closed_set.remove(m)
                             open_set.add(m)
         if n == None:
-            TYPE THE CODE HERE TO PRINT AS Path does not exist!
-            
-            return None
+        print('Path does not exist!')
+        return None
         
         # if the current node is the stop_node
         # then we begin reconstructin the path from it to the start_node
